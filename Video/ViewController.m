@@ -45,7 +45,7 @@
     return _loopView;
 }
 
--(void)loopButtonViewDelegateWithBtnClicked:(UIButton *)btn
+-(void)se:(UIButton *)btn
 {
     switch (btn.tag) {
         case 10:
