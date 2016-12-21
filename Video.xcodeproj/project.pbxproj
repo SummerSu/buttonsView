@@ -15,6 +15,9 @@
 		5009B2E51E0A6456007520DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5009B2E31E0A6456007520DA /* LaunchScreen.storyboard */; };
 		5009B2F01E0A6456007520DA /* VideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009B2EF1E0A6456007520DA /* VideoTests.m */; };
 		5009B2FB1E0A6456007520DA /* VideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009B2FA1E0A6456007520DA /* VideoUITests.m */; };
+		5009B3281E0A8A02007520DA /* BtnParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009B3231E0A8A02007520DA /* BtnParamsModel.m */; };
+		5009B3291E0A8A02007520DA /* LoopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009B3251E0A8A02007520DA /* LoopButtonView.m */; };
+		5009B32A1E0A8A02007520DA /* MineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009B3271E0A8A02007520DA /* MineButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		5009B2F61E0A6456007520DA /* VideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5009B2FA1E0A6456007520DA /* VideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoUITests.m; sourceTree = "<group>"; };
 		5009B2FC1E0A6456007520DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5009B3221E0A8A02007520DA /* BtnParamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnParamsModel.h; sourceTree = "<group>"; };
+		5009B3231E0A8A02007520DA /* BtnParamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnParamsModel.m; sourceTree = "<group>"; };
+		5009B3241E0A8A02007520DA /* LoopButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopButtonView.h; sourceTree = "<group>"; };
+		5009B3251E0A8A02007520DA /* LoopButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopButtonView.m; sourceTree = "<group>"; };
+		5009B3261E0A8A02007520DA /* MineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineButton.h; sourceTree = "<group>"; };
+		5009B3271E0A8A02007520DA /* MineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				5009B2D91E0A6456007520DA /* AppDelegate.m */,
 				5009B2DB1E0A6456007520DA /* ViewController.h */,
 				5009B2DC1E0A6456007520DA /* ViewController.m */,
+				5009B3211E0A8A02007520DA /* ButtonsView */,
 				5009B2DE1E0A6456007520DA /* Main.storyboard */,
 				5009B2E11E0A6456007520DA /* Assets.xcassets */,
 				5009B2E31E0A6456007520DA /* LaunchScreen.storyboard */,
@@ -138,6 +148,19 @@
 				5009B2FC1E0A6456007520DA /* Info.plist */,
 			);
 			path = VideoUITests;
+			sourceTree = "<group>";
+		};
+		5009B3211E0A8A02007520DA /* ButtonsView */ = {
+			isa = PBXGroup;
+			children = (
+				5009B3221E0A8A02007520DA /* BtnParamsModel.h */,
+				5009B3231E0A8A02007520DA /* BtnParamsModel.m */,
+				5009B3241E0A8A02007520DA /* LoopButtonView.h */,
+				5009B3251E0A8A02007520DA /* LoopButtonView.m */,
+				5009B3261E0A8A02007520DA /* MineButton.h */,
+				5009B3271E0A8A02007520DA /* MineButton.m */,
+			);
+			path = ButtonsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5009B3281E0A8A02007520DA /* BtnParamsModel.m in Sources */,
 				5009B2DD1E0A6456007520DA /* ViewController.m in Sources */,
 				5009B2DA1E0A6456007520DA /* AppDelegate.m in Sources */,
+				5009B3291E0A8A02007520DA /* LoopButtonView.m in Sources */,
+				5009B32A1E0A8A02007520DA /* MineButton.m in Sources */,
 				5009B2D71E0A6456007520DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +540,7 @@
 				5009B3011E0A6456007520DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5009B3021E0A6456007520DA /* Build configuration list for PBXNativeTarget "VideoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +549,7 @@
 				5009B3041E0A6456007520DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5009B3051E0A6456007520DA /* Build configuration list for PBXNativeTarget "VideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +558,7 @@
 				5009B3071E0A6456007520DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
