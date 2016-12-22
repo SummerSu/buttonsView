@@ -27,9 +27,12 @@
     if (!_dataArray) {
         NSDictionary * dict1 = @{@"image":@"收藏.png",@"title":@"收藏"};
         NSDictionary * dict2 = @{@"image":@"优惠券.png",@"title":@"优惠券"};
+        NSDictionary * dict3 = @{@"image":@"设置.png",@"title":@"设置"};
         NSDictionary * dict4 = @{@"image":@"消费码.png",@"title":@"消费码"};
-        NSDictionary * dict5 = @{@"image":@"设置.png",@"title":@"设置"};
-        _dataArray = [NSArray arrayWithObjects:dict1,dict2,dict4,dict5, nil];
+//        NSDictionary * dict5 = @{@"image":@"设置.png",@"title":@"设置"};
+//        NSDictionary * dict6 = @{@"image":@"设置.png",@"title":@"设置"};
+//        NSDictionary * dict7 = @{@"image":@"设置.png",@"title":@"设置"};
+        _dataArray = [NSArray arrayWithObjects:dict1,dict2,dict3,dict4, nil];
     }
     return _dataArray;
 }
@@ -38,14 +41,15 @@
 -(LoopButtonView *)loopView
 {
     if (!_loopView) {
-        _loopView  = [[LoopButtonView alloc]initWithFrame:CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.width)];
+        _loopView  = [[LoopButtonView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.height)];
         [_loopView addOptionBtn:self.dataArray];
         _loopView.delegate = self;
+        _loopView.backgroundColor = [UIColor lightGrayColor];
     }
     return _loopView;
 }
 
--(void)se:(UIButton *)btn
+-(void)loopButtonViewDelegateWithBtnClicked:(UIButton *)btn
 {
     switch (btn.tag) {
         case 10:
