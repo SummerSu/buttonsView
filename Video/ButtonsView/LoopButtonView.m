@@ -41,14 +41,14 @@
         BtnParamsModel *model = [BtnParamsModel buttonInfoWithDict:btnArr[i]];
         // 2.创建按钮
         MineButton *optionBtn = [[MineButton alloc] init];
-
+        
         // 3.frame
         CGFloat optionW = 80.0f;
         CGFloat optionH = 104.0f;
         // 控制器view的宽高
         CGFloat viewW = self.frame.size.width;
         CGFloat viewH = self.frame.size.height;
- 
+        
         int col = i % totalColumns;
         int row = i / totalColumns;
         
@@ -60,7 +60,7 @@
         
         CGFloat topMargin = (viewH - optionH *totalRow)/(totalRow+1);
         CGFloat optionY = topMargin + row * (optionH + topMargin);
-
+        
         optionBtn.frame = CGRectMake(optionX, optionY, optionW, optionH);
         //4.设置内容
         optionBtn.title = model.title;
@@ -68,7 +68,7 @@
         
         //5.添加
         [self addSubview:optionBtn];
-
+        
         //6.监听点击
         optionBtn.tag = 180+i;
         [optionBtn addTarget:self action:@selector(optionClick:) forControlEvents:UIControlEventTouchUpInside];
